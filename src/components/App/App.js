@@ -43,7 +43,7 @@ function App() {
     setTickets(arr);
   }, [fill]);
 
-  const [val, setVal] = useState("Р");
+  const [val, setVal] = useState("₽");
 
   return (
     <div className="App">
