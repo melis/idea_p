@@ -39,12 +39,12 @@ function App() {
       }
       return false;
     });
-    console.log(arr);
+
     setTickets(arr);
   }, [fill]);
 
   const [val, setVal] = useState("Р");
-  console.log(fill);
+
   return (
     <div className="App">
       <div className="filter_box">
