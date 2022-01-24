@@ -8,10 +8,10 @@ function App() {
   );
   const [fill, setFill] = useState({
     all: true,
-    zero: false,
-    one: false,
-    two: false,
-    three: false,
+    zero: true,
+    one: true,
+    two: true,
+    three: true,
   });
   useEffect(() => {
     if (fill.zero && fill.one && fill.two && fill.three && !fill.all) {
