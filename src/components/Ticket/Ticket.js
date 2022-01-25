@@ -1,4 +1,5 @@
 import { format } from "date-fns";
+import { ru } from "date-fns/locale";
 import React from "react";
 
 function Ticket({ tick, val }) {
@@ -29,7 +30,9 @@ function Ticket({ tick, val }) {
           </div>
 
           <div>
-            {format(new Date(tick.departure_date), "dd MMM yyyy' 'eeeeee")}
+            {format(new Date(tick.departure_date), "dd MMM yyyy' 'eeeeee", {
+              locale: ru,
+            })}
           </div>
         </div>
         <div className="ticket_arrival">
@@ -38,7 +41,9 @@ function Ticket({ tick, val }) {
             {tick.destination_name}, {tick.destination}
           </div>
           <div>
-            {format(new Date(tick.arrival_date), "dd MMM yyyy' 'eeeeee")}
+            {format(new Date(tick.arrival_date), "dd MMM yyyy' 'eeeeee", {
+              locale: ru,
+            })}
           </div>
         </div>
       </div>
