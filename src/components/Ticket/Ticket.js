@@ -30,7 +30,7 @@ function Ticket({ tick, val }) {
           </div>
 
           <div>
-            {format(new Date(tick.departure_date), "dd MMM yyyy' 'eeeeee", {
+            {format(new Date(tick.departure_date), "dd MMM yyyy,' 'EEEEEE", {
               locale: ru,
             })}
           </div>
