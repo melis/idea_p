@@ -6,6 +6,7 @@ function App() {
   const [tickets, setTickets] = useState(
     data.sort((a, b) => a.price - b.price)
   );
+
   const [fill, setFill] = useState({
     all: true,
     zero: true,
